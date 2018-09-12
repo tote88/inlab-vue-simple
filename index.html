@@ -4,8 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-    <div>
-        Primer pas de l'exemple
+    <div id="app">
+        {{ header }}
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                header: "Segon pas de l'exemple"
+            }
+        })
+    </script>
 </body>
 </html>
